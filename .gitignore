@@ -1,0 +1,25 @@
+# Node dependency folders
+node_modules/
+**/node_modules/
+
+# Production build outputs
+dist/
+**/dist/
+
+# Local configuration and environment secrets
+.env
+backend/.env
+**/ .env
+
+# Log files
+*.log
+**/*.log
+
+# IDE and OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Assistant directory
+.gemini/
