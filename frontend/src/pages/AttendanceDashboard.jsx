@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { 
   Sparkles, Calendar, BookOpen, Clock, AlertTriangle, CheckCircle2, 
-  Trash2, Plus, PlusCircle, ArrowLeft, Download, FileText, LayoutList 
+  Trash2, Plus, PlusCircle, ArrowLeft, Download, FileText, LayoutList, GraduationCap 
 } from 'lucide-react';
 
 // Slice thunks
@@ -127,7 +127,7 @@ export const AttendanceDashboard = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+              <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
               <span className="text-xl font-bold font-outfit text-slate-900 dark:text-white">Attendance Portal</span>
             </div>
 

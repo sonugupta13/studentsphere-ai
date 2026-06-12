@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   Plus, FileText, Trash2, Copy, Edit, Loader, CheckCircle2,
-  AlertCircle, Moon, Sun, LogOut, Sparkles, BarChart2, Calendar, Layout
+  AlertCircle, Moon, Sun, LogOut, Sparkles, BarChart2, Calendar, Layout, GraduationCap
 } from 'lucide-react';
 
 // Slices
@@ -137,7 +137,7 @@ export const ResumeBuilder = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+              <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
               <Link to="/dashboard" className="text-xl font-bold font-outfit text-slate-900 dark:text-white hover:opacity-90">
                 StudentSphere AI
               </Link>

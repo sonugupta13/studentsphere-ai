@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Github, Linkedin, Mail } from 'lucide-react';
+import { GraduationCap, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -10,7 +10,7 @@ export const Footer = () => {
           {/* Logo & Description */}
           <div className="space-y-4 col-span-1 md:col-span-2">
             <div className="flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400 animate-pulse" />
+              <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400 animate-pulse" />
               <span className="text-xl font-bold font-outfit text-slate-900 dark:text-white">StudentSphere AI</span>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm leading-relaxed">

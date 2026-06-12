@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { 
   Sparkles, ArrowLeft, PlusCircle, Calendar, Edit3, Trash2, 
   ChevronLeft, Award, TrendingUp, BarChart2, PieChart as PieIcon, 
-  BookOpen, BrainCircuit, Target, Percent, Save, Plus, AlertTriangle
+  BookOpen, BrainCircuit, Target, Percent, Save, Plus, AlertTriangle, GraduationCap
 } from 'lucide-react';
 
 // Slice thunks
@@ -167,7 +167,7 @@ export const CGPACalculator = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+              <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
               <span className="text-xl font-bold font-outfit text-slate-900 dark:text-white">CGPA Calculator</span>
             </div>
 

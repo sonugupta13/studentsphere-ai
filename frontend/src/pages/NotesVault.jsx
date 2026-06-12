@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { 
   Sparkles, ArrowLeft, Download, FileText, Search,
-  Filter, PlusCircle, Trash2, Eye, X, BookOpen, Database, FolderPlus
+  Filter, PlusCircle, Trash2, Eye, X, BookOpen, Database, FolderPlus, GraduationCap
 } from 'lucide-react';
 
 // Redux thunks
@@ -135,7 +135,7 @@ export const NotesVault = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
+              <GraduationCap className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
               <span className="text-xl font-bold font-outfit text-slate-900 dark:text-white">Notes Vault</span>
             </div>
 

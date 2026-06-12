@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Mail, ArrowLeft, KeyRound, Sparkles, CheckCircle2, Copy, AlertCircle } from 'lucide-react';
+import { Mail, ArrowLeft, KeyRound, Sparkles, CheckCircle2, Copy, AlertCircle, GraduationCap } from 'lucide-react';
 import { forgotPassword, clearError, clearSuccessMessage } from '../redux/slices/authSlice';
 import Toast from '../components/Toast';
 
@@ -47,7 +47,7 @@ export const ForgotPassword = () => {
     <div className="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8 bg-slate-50 dark:bg-slate-950 transition-colors duration-200">
       <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-900/40 text-indigo-600 dark:text-indigo-400 text-sm font-semibold mb-6">
-          <Sparkles className="h-4 w-4" />
+          <GraduationCap className="h-4 w-4" />
           <span>StudentSphere AI</span>
         </div>
         <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight font-outfit">
