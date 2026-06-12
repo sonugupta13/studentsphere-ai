@@ -148,7 +148,7 @@ export const AddAssignmentModal = ({ isOpen, onClose, onShowToast, assignmentToE
       formData.append('file', file);
     }
 
-    if (assignmentToEdit) {
+    if (assignmentToEdit && assignmentToEdit._id) {
       formData.append('existingAttachments', JSON.stringify(existingAttachments));
       dispatch(updateAssignment({ id: assignmentToEdit._id, formData })).then((res) => {
         setSubmitting(false);
@@ -185,7 +185,7 @@ export const AddAssignmentModal = ({ isOpen, onClose, onShowToast, assignmentToE
         <div className="flex items-center gap-2 mb-5">
           <Sparkles className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
           <h2 className="text-xl font-bold font-outfit text-slate-900 dark:text-white">
-            {assignmentToEdit ? 'Edit Assignment' : 'Add Assignment'}
+            {assignmentToEdit && assignmentToEdit._id ? 'Edit Assignment' : 'Add Assignment'}
           </h2>
         </div>
 
@@ -404,7 +404,7 @@ export const AddAssignmentModal = ({ isOpen, onClose, onShowToast, assignmentToE
             >
               {submitting ? (
                 <div className="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
-              ) : assignmentToEdit ? (
+              ) : assignmentToEdit && assignmentToEdit._id ? (
                 <>
                   <Save className="h-4.5 w-4.5" />
                   <span>Save Changes</span>
