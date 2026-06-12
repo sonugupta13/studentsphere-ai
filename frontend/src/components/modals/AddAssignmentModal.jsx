@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { X, Sparkles, PlusCircle, Save, FileText, Trash2, Calendar, Clock } from 'lucide-react';
+import { X, GraduationCap, PlusCircle, Save, FileText, Trash2, Calendar, Clock } from 'lucide-react';
 import { createAssignment, updateAssignment } from '../../redux/slices/assignmentSlice';
 import { fetchAttendance } from '../../redux/slices/attendanceSlice';
 
@@ -183,7 +183,7 @@ export const AddAssignmentModal = ({ isOpen, onClose, onShowToast, assignmentToE
         </button>
 
         <div className="flex items-center gap-2 mb-5">
-          <Sparkles className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+          <GraduationCap className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
           <h2 className="text-xl font-bold font-outfit text-slate-900 dark:text-white">
             {assignmentToEdit && assignmentToEdit._id ? 'Edit Assignment' : 'Add Assignment'}
           </h2>

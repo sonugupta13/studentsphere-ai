@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { X, Sparkles, PlusCircle } from 'lucide-react';
+import { X, GraduationCap, PlusCircle } from 'lucide-react';
 import { addSubject } from '../../redux/slices/attendanceSlice';
 
 export const AddSubjectModal = ({ isOpen, onClose, onShowToast }) => {
@@ -45,7 +45,7 @@ export const AddSubjectModal = ({ isOpen, onClose, onShowToast }) => {
         </button>
 
         <div className="flex items-center gap-2 mb-6">
-          <Sparkles className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+          <GraduationCap className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
           <h2 className="text-xl font-bold font-outfit text-slate-900 dark:text-white">Add New Subject</h2>
         </div>
 

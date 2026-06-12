@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { X, Sparkles, PlusCircle, Save, Calendar, Clock, Trash2 } from 'lucide-react';
+import { X, GraduationCap, PlusCircle, Save, Calendar, Clock, Trash2 } from 'lucide-react';
 import { createExam, updateExam } from '../../redux/slices/examSlice';
 import { fetchAttendance } from '../../redux/slices/attendanceSlice';
 
@@ -160,7 +160,7 @@ export const AddExamModal = ({ isOpen, onClose, onShowToast, examToEdit = null }
         </button>
 
         <div className="flex items-center gap-2 mb-5">
-          <Sparkles className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+          <GraduationCap className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
           <h2 className="text-xl font-bold font-outfit text-slate-900 dark:text-white">
             {examToEdit ? 'Edit Exam Details' : 'Add Exam Schedule'}
           </h2>

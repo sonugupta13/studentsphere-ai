@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { X, Sparkles, PlusCircle } from 'lucide-react';
+import { X, GraduationCap, PlusCircle } from 'lucide-react';
 import { addInternship } from '../../redux/slices/dashboardSlice';
 
 export const AddInternshipModal = ({ isOpen, onClose, onShowToast }) => {
@@ -45,7 +45,7 @@ export const AddInternshipModal = ({ isOpen, onClose, onShowToast }) => {
         </button>
 
         <div className="flex items-center gap-2 mb-6">
-          <Sparkles className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+          <GraduationCap className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
           <h2 className="text-xl font-bold font-outfit text-slate-900 dark:text-white">Track Internship Application</h2>
         </div>
 
