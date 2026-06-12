@@ -29,6 +29,7 @@ import DiscussionRoom from './pages/DiscussionRoom';
 import UserProfile from './pages/UserProfile';
 import CommunityAnalytics from './pages/CommunityAnalytics';
 import About from './pages/About';
+import AboutDeveloper from './pages/AboutDeveloper';
 
 
 export const App = () => {
@@ -72,6 +73,7 @@ export const App = () => {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/about" element={<About />} />
+        <Route path="/about-developer" element={<AboutDeveloper />} />
 
         {/* Protected Student Portal */}
         <Route

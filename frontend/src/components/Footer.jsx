@@ -33,9 +33,9 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a href="https://github.com/sonugupta13" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-indigo-650 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
+                <Link to="/about-developer" className="text-slate-650 hover:text-indigo-655 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
                   About Developer
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
