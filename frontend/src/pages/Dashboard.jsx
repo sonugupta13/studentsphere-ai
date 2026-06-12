@@ -24,6 +24,7 @@ import PomodoroTimer from '../components/PomodoroTimer';
 import RecentActivity from '../components/RecentActivity';
 import NotificationsPanel from '../components/NotificationsPanel';
 import Toast from '../components/Toast';
+import Footer from '../components/Footer';
 
 // Modals
 import AddAssignmentModal from '../components/modals/AddAssignmentModal';
@@ -249,6 +250,13 @@ export const Dashboard = () => {
                 )}
               </Link>
 
+              <Link
+                to="/about"
+                className="hidden 2xl:inline-flex items-center justify-center px-4 py-2 border border-slate-200 dark:border-slate-800 rounded-xl text-sm font-semibold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+              >
+                About
+              </Link>
+
               {user?.role === 'admin' && (
                 <Link
                   to="/admin"
@@ -359,6 +367,15 @@ export const Dashboard = () => {
                     {notifications.filter(n => !n.isRead).length}
                   </span>
                 )}
+              </Link>
+
+              <Link
+                to="/about"
+                onClick={() => setIsNavOpen(false)}
+                className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 transition-all border border-transparent hover:border-slate-200 dark:hover:border-slate-800"
+              >
+                <Sparkles className="h-4.5 w-4.5 text-indigo-500 animate-pulse" />
+                About StudentSphere AI
               </Link>
 
               {user?.role === 'admin' && (
@@ -629,6 +646,9 @@ export const Dashboard = () => {
         </div>
 
       </main>
+
+      {/* Reusable Footer */}
+      <Footer />
 
       {/* Modals Mounting */}
       <AddAssignmentModal
