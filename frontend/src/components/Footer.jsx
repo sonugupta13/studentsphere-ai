@@ -33,8 +33,18 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about-developer" className="text-slate-650 hover:text-indigo-655 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
+                <Link to="/about-developer" className="text-slate-600 hover:text-indigo-650 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
                   About Developer
+                </Link>
+              </li>
+              <li>
+                <Link to="/reviews" className="text-slate-600 hover:text-indigo-650 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
+                  Student Reviews
+                </Link>
+              </li>
+              <li>
+                <Link to="/feedback" className="text-slate-600 hover:text-indigo-650 dark:text-slate-400 dark:hover:text-indigo-400 transition-colors">
+                  Private Feedback
                 </Link>
               </li>
             </ul>
@@ -64,8 +74,8 @@ export const Footer = () => {
 
         <div className="border-t border-slate-200 dark:border-slate-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-450 font-medium">
           <p>© 2026 StudentSphere AI. All Rights Reserved.</p>
-          <p className="flex items-center gap-1 font-semibold text-slate-400">
-            Made for Students, by Students.
+          <p className="flex items-center gap-1 font-semibold text-slate-500 dark:text-slate-400">
+            ⭐ Rated 4.9/5 by Verified Students. <Link to="/reviews" className="text-indigo-655 dark:text-indigo-400 hover:underline ml-1">View Reviews →</Link>
           </p>
         </div>
       </div>

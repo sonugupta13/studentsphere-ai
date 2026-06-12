@@ -18,6 +18,13 @@ import {
   getAnalytics,
   getActivityLogs,
 } from '../controllers/adminController.js';
+import {
+  getAdminReviews,
+  approveReview,
+  rejectReview,
+  toggleFeatureReview,
+  getReviewAnalytics
+} from '../controllers/reviewController.js';
 import { authenticateUser, authorizeRoles } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
@@ -46,5 +53,12 @@ router.patch('/reports/:id', authenticateUser, authorizeRoles('admin'), updateRe
 
 router.get('/analytics', authenticateUser, authorizeRoles('admin'), getAnalytics);
 router.get('/activity-logs', authenticateUser, authorizeRoles('admin'), getActivityLogs);
+
+// Review Moderation
+router.get('/reviews', authenticateUser, authorizeRoles('admin'), getAdminReviews);
+router.get('/reviews/analytics', authenticateUser, authorizeRoles('admin'), getReviewAnalytics);
+router.patch('/reviews/approve/:id', authenticateUser, authorizeRoles('admin'), approveReview);
+router.patch('/reviews/reject/:id', authenticateUser, authorizeRoles('admin'), rejectReview);
+router.patch('/reviews/feature/:id', authenticateUser, authorizeRoles('admin'), toggleFeatureReview);
 
 export default router;

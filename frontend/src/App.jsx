@@ -30,6 +30,8 @@ import UserProfile from './pages/UserProfile';
 import CommunityAnalytics from './pages/CommunityAnalytics';
 import About from './pages/About';
 import AboutDeveloper from './pages/AboutDeveloper';
+import Reviews from './pages/Reviews';
+import Feedback from './pages/Feedback';
 
 
 export const App = () => {
@@ -74,6 +76,15 @@ export const App = () => {
         <Route path="/reset-password/:token" element={<ResetPassword />} />
         <Route path="/about" element={<About />} />
         <Route path="/about-developer" element={<AboutDeveloper />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route
+          path="/feedback"
+          element={
+            <ProtectedRoute>
+              <Feedback />
+            </ProtectedRoute>
+          }
+        />
 
         {/* Protected Student Portal */}
         <Route

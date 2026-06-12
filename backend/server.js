@@ -19,6 +19,8 @@ import codingRoutes from './routes/codingRoutes.js';
 import expenseRoutes from './routes/expenseRoutes.js';
 import communityRoutes from './routes/communityRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
+import reviewRoutes from './routes/reviewRoutes.js';
+import feedbackRoutes from './routes/feedbackRoutes.js';
 import http from 'http';
 import { initSocket } from './utils/socket.js';
 
@@ -108,6 +110,10 @@ app.use('/api/community', communityRoutes);
 
 // Admin endpoints
 app.use('/api/admin', adminRoutes);
+
+// Review and Feedback endpoints
+app.use('/api/reviews', reviewRoutes);
+app.use('/api/feedback', feedbackRoutes);
 
 
 // Static uploads serving

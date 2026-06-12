@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { logoutUser } from '../redux/slices/authSlice';
 import { Footer } from '../components/Footer';
+import { TestimonialsCarousel } from '../components/TestimonialsCarousel';
 
 export const About = () => {
   const dispatch = useDispatch();
@@ -521,42 +522,7 @@ export const About = () => {
 
       {/* 10. Testimonials */}
       <section className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <h2 className="text-3xl font-extrabold font-outfit text-slate-900 dark:text-white">What Students Say</h2>
-          <p className="text-sm text-slate-500 dark:text-slate-450 leading-normal font-medium">
-            Read positive experiences from active student community members.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonialsList.map((test, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex gap-1 mb-4 text-amber-500">
-                  {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="h-4 w-4 fill-current" />)}
-                </div>
-                <p className="text-sm text-slate-650 dark:text-slate-350 italic font-medium leading-relaxed">
-                  "{test.content}"
-                </p>
-              </div>
-              <div className="flex items-center gap-3.5 mt-6 border-t border-slate-100 dark:border-slate-850 pt-4">
-                <div className="h-10 w-10 rounded-full bg-indigo-50/50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-800 flex items-center justify-center font-bold text-indigo-650 dark:text-indigo-400">
-                  {test.avatar}
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold text-slate-900 dark:text-white">{test.name}</h4>
-                  <p className="text-[10px] text-slate-400 font-bold">{test.role}</p>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        <TestimonialsCarousel />
       </section>
 
       {/* 11. Call to Action */}

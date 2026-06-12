@@ -25,6 +25,7 @@ import RecentActivity from '../components/RecentActivity';
 import NotificationsPanel from '../components/NotificationsPanel';
 import Toast from '../components/Toast';
 import Footer from '../components/Footer';
+import TestimonialsCarousel from '../components/TestimonialsCarousel';
 
 // Modals
 import AddAssignmentModal from '../components/modals/AddAssignmentModal';
@@ -643,6 +644,11 @@ export const Dashboard = () => {
         {/* Recent Activity Feed */}
         <div className="mt-8">
           <RecentActivity />
+        </div>
+
+        {/* Testimonials Carousel */}
+        <div className="mt-12 border-t border-slate-205 dark:border-slate-800 pt-12">
+          <TestimonialsCarousel />
         </div>
 
       </main>

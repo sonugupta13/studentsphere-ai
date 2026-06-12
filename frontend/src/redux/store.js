@@ -11,6 +11,7 @@ import codingReducer from './slices/codingSlice';
 import expenseReducer from './slices/expenseSlice';
 import communityReducer from './slices/communitySlice';
 import adminReducer from './slices/adminSlice';
+import reviewReducer from './slices/reviewSlice';
 
 export const store = configureStore({
   reducer: {
@@ -26,6 +27,7 @@ export const store = configureStore({
     expenses: expenseReducer,
     community: communityReducer,
     admin: adminReducer,
+    reviews: reviewReducer,
   },
 });
 
