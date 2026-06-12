@@ -1,5 +1,5 @@
 import { jsPDF } from 'jspdf';
-import 'jspdf-autotable';
+import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 // 1. Export Monthly Attendance Report to PDF
@@ -56,7 +56,7 @@ export const exportToPDF = (report) => {
     `${sub.percentage}%`,
   ]);
 
-  doc.autoTable({
+  autoTable(doc, {
     startY: 84,
     head: tableHeaders,
     body: tableData,
